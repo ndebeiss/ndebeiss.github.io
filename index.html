@@ -1,0 +1,27 @@
+<style>
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #turtle_path {
+    fill: red;
+  }
+
+  #draw {
+    stroke: black;
+  }
+</style>
+<script src="turtle.js"></script>
+<div id="path"></div>
+<svg>
+  <filter id="blurMe">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+  </filter>
+  <g>
+    <path id="draw" d=""></path>
+  </g>
+  <g>
+    <path id="turtle_path"></path>
+  </g>
+</svg>
